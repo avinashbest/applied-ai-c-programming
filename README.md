@@ -119,3 +119,131 @@
 - Declaration: Stating that a variable exists. for e.g, int a;
 - Always declare before using variable otherwise compiler will through a error.
 - Typically, We should use camelCase to represent a variable name.
+- Initialization: Storing some value during declaration. for e.g, int a = 19;
+
+# Constants:
+
+- Do not change throughout of the program. for e.g, const int a = 5;
+- Types of constant: char, string, integer, real-valued
+
+| Data Types  |                    Example                     |
+| :---------: | :--------------------------------------------: |
+|     int     |                  int a = 10;                   |
+|    char     |                char name = 'a'                 |
+|   string    |           char name[10] = "avinash"            |
+| real-valued | float: 1.2F or 1.2f, 1.2e5, long: 1.2L or 1.2l |
+
+- Decimal System: 0,1,2,3,4,5,6,7,8,9 => Base 10
+
+|  1   |  2   |  3   |
+| :--: | :--: | :--: |
+|  x   |  x   |  x   |
+| 10^2 | 10^1 | 10^0 |
+| 100  | +20  |  +3  | = 123(Decimal) |
+
+- Octal System: 0,1,2,3,4,5,6,7,8 => Base 8 => int a = 012;
+
+|  0  |  1  |  2  |
+| :-: | :-: | :-: |
+|  -  |  x  |  x  |
+|  -  | 8^1 | 8^0 |
+|  -  |  8  | +2  | = 10(Decimal) |
+
+- Hexa-Decimal System: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f => Base 16 => int a = 0x12;
+
+|  0  |  x  |  1   |  2   |
+| :-: | :-: | :--: | :--: |
+|  -  |  -  |  x   |  x   |
+|  -  |  -  | 16^1 | 16^0 |
+|  -  |  -  |  16  |  +2  | = 18(Decimal) |
+
+- Symbolic Constant: #define PI 3.14 => Macro
+
+# C Book:
+
+- C in Depth: By Srivastsava
+- K & R -> C
+
+# Input Output:
+
+- #include <stdio.h> => Including Header file where some of the key information of printf and scanf how they work is stored in stdio.h header file.
+
+- Escape Sequence:
+<!-- Image -->
+- scanf can take input multiple variables value in single line of code.
+
+# Input Output Formatting:
+
+- Integers: scanf("%2d %3d", &a, &b); //Formatted Input
+
+  ```
+    a: read only first 2 digits
+    b: read only first 3 digits
+
+    Case 1: 6, 39 => a = 6 b = 39
+    Case 2: 12, 123 => a = 12 b = 123
+    Case 3: 123, 1234 => a = 12 b = 3
+    Case 4: 12, 1234 => a = 12 b = 123
+  ```
+
+- Integers: printf("a = %4d, b = %3d", a, b); //Formatted Output
+
+```
+    a: print atmost(Minimum no. of digit) 4 digits
+    b: print atmost(Minimum no. of digit) 3 digits
+
+    Case 1: a = 12, b = 14 => a = _ _ _ _, b = _ _ _ _ => a = __12, b = _14
+    Case 2: a = 12345, b = 123456 => a = 12345, b = 123456
+```
+
+- float: scanf("%3f %4f", &a, &b); //Formatted Input
+
+  ```
+    a: read only first 2 digits(Maximum no. of digits)
+    b: read only first 3 digits(Maximum no. of digits)
+
+    Case 1: 5, 5.9 => a = 5.0 b = 5.9
+    Case 2: 5.1, 1.23 => a = 5.1 b = 1.23
+    Case 3: 1.23, 4.5678 => a = 1.2 b = 3.0
+  ```
+
+- float: printf("a = %4.1f, b = %7.2f", a, b); //Formatted Output
+
+```
+    a: print atmost(Minimum no. of digit) 4 digits
+    b: print atmost(Minimum no. of digit) 7 digits
+
+    Case 1: a = 8.0, b = 5.9 => a = _ _ _ _, b = _ _ _ _ _ _ _=> a = _8.0, b = ___5.90
+    Case 2: a = 15.231, b = 65.12345 => a = 15.2, b = __65.12
+```
+
+- Strings: char str[10] = "abcdef";
+
+  - Input:
+    ```
+        Case 1: scanf("%s", str); => abcdef\0 -> str
+        Case 2: scanf("%3s", str); => abc\0 -> str
+    ```
+  - Output:
+    ```
+        Case 1: printf("%3s", "abcdef"); -> abcdef
+        Case 2: printf("%5s", "abcdef"); -> ___ab
+        Case 3: printf("%.3s", "abcdef"); -> abc
+        Case 4: printf("%8.3s", "abcdef"); -> _____abc
+    ```
+
+- Suppresssion Character:
+
+  - scanf("%d%\*d%d", &a, &b, &c); I/P: 25, 30, 35 => O/P: a = 25, b = 35, c = garbage value
+
+  - variable c will suppressed so, nothing is stored
+
+- getchar() & putchar()
+
+```
+char c;
+printf("Enter a char: ");
+c = getchar(); //scanf("%c", &c);
+
+putchar(c); //printf("Value you entered : %c", c);
+```
