@@ -247,3 +247,35 @@ c = getchar(); //scanf("%c", &c);
 
 putchar(c); //printf("Value you entered : %c", c);
 ```
+
+# Operation & Expressions:
+
+- Unary Operator: Operating on one data_type
+- Binary Operator: Operating on two data_type(same or other)
+
+  - NOTE: int divided by int result is also int
+  - There is no any modulo operation in floating point number, No sense to get remainder in floating point number.
+
+- Assigment Operator: for e.g, int x = 5;
+- Increment / Decrement Operator
+
+  ```
+  Consider the following C Program:
+  #include<stdio.h>
+
+  int main()
+  {
+    int m = 10;
+    int n, n1;
+    n = ++m;
+    n1 = m++;
+    n--;
+    --n1;
+    n -= n1;
+    printf("%d", n);
+
+    return 0;
+  }
+  ```
+
+- Relational Operators
