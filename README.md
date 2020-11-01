@@ -329,3 +329,45 @@
       return 0;
       }
       ```
+
+- Ternary Operator
+- sizeof operator: Unary Operator
+
+# Precedence & Associativity:
+
+|                 |          Operator           | Associativity | Precedence |
+| :-------------: | :-------------------------: | :-----------: | :--------: |
+|       ()        |        Function Call        | Left-to-Right | Highest 14 |
+|       []        |       Array Subscript       | Left-to-Right | Highest 14 |
+|        .        |  Dot (Member of Structure)  | Left-to-Right | Highest 14 |
+|       ->        | Arrow (Member of Structure) | Left-to-Right | Highest 14 |
+|        !        |         Logical NOT         | Right-to-Left | Highest 13 |
+|        ~        |      one's complement       | Right-to-Left | Highest 13 |
+|        -        |    Unary minus(Negation)    | Right-to-Left | Highest 13 |
+|       ++        |          Increment          | Right-to-Left | Highest 13 |
+|       --        |          Decrement          | Right-to-Left | Highest 13 |
+|        &        |         Address-of          | Right-to-Left | Highest 13 |
+|       \*        |         Indirection         | Right-to-Left | Highest 13 |
+|     (type)      |            cast             | Right-to-Left | Highest 13 |
+|     sizeof      |           sizeof            | Right-to-Left | Highest 13 |
+|       \*        |       Multiplication        | Left-to-Right | Highest 12 |
+|        /        |          Division           | Left-to-Right | Highest 12 |
+|        %        |     Modulo (Remainder)      | Left-to-Right | Highest 12 |
+|        +        |          Addition           | Left-to-Right | Highest 11 |
+|        -        |         Subtraction         | Left-to-Right | Highest 11 |
+|       <<        |         Left-Shift          | Left-to-Right | Highest 10 |
+|       >>        |         Right-Shift         | Left-to-Right | Highest 10 |
+|        <        |          Less than          | Left-to-Right | Highest 8  |
+|       <=        |     Less than or equal      | Left-to-Right | Highest 8  |
+|        >        |        Greater than         | Left-to-Right | Highest 8  |
+|       >=        |    Greater than or equal    | Left-to-Right | Highest 8  |
+|       ==        |          Equal to           | Left-to-Right | Highest 8  |
+|       !=        |          Not Equal          | Left-to-Right | Highest 8  |
+|        &        |         Bitwise AND         | Left-to-Right | Highest 7  |
+|        ^        |         Bitwise XOR         | Left-to-Right | Highest 6  |
+|       \|        |         Bitwise OR          | Left-to-Right | Highest 5  |
+|       &&        |         Logical AND         | Left-to-Right | Highest 4  |
+|      \|\|       |         Logical OR          | Left-to-Right | Highest 3  |
+|       ? :       |         Conditional         | Right-to-Left | Highest 2  |
+| =, +=, \*=, etc |     Assignment Operator     | Right-to-Left | Highest 1  |
+|        ,        |            Comma            | Left-to-Right |  Lowest 0  |
