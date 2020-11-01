@@ -12,9 +12,9 @@
 - Device Drivers => C/C++
 - Hardware/IoT Programming => C/C++ (Controlling Hardware)
 
-<!-- Image What inside PC? -->
 <!-- CPU Work-fLow -->
-<!-- C Program Workflow -->
+
+![image](https://drive.google.com/uc?export=view&id=1d8xK2HFH99DNw31xhIW5vZyvfv0MGxFh)
 
 # Basic Input & Output:
 
@@ -58,14 +58,14 @@
 
 - There are two type of Character Set used generally:
 
-  1. ASCII (Older) => 0 to 255 [256 Numbers]
+  - ASCII (Older) => 0 to 255 [256 Numbers]
   <!-- ASCII Character Set Image -->
-  2. Unicode (Modern) => 1,114,112 Unique Characters
+  - Unicode (Modern) => 1,114,112 Unique Characters
 
 - C follows ASCII Character Set Standard Only.
 
-  1. 0 to 127 => Printable Characters
-  2. 128 to 255 => Non-Printable Characters
+  - 0 to 127 => Printable Characters
+  - 128 to 255 => Non-Printable Characters
 
 - Any Character Set ==> Converted (Nummeric form) ==> Binary Representation ==> RAM/DISK (store)
 
@@ -78,13 +78,13 @@
 
 - Rule for Identifier:
 
-  1. Alphabets, \_(underscore), digits
-  2. First character => Alphabet
-  3. Not Keyword
-  4. Case - Sensitive
-  5. Length of Identifier => Compiler/Implementation
-     - Older compiler => 8 character
-     - ANSI C Standard => Most Compiler => 31 character
+  - Alphabets, \_(underscore), digits
+  - First character => Alphabet
+  - Not Keyword
+  - Case - Sensitive
+  - Length of Identifier => Compiler/Implementation
+    - Older compiler => 8 character
+    - ANSI C Standard => Most Compiler => 31 character
 
 - Some Compilers: GCC, Visual Studio, Borland, Clang, intel, etc.
 
@@ -92,8 +92,8 @@
 
 - Primary => void, char, int, float(Single precision real values), double(double precision real values)
 - Qualifiers:
-  1. short, long
-  2. signed, unsigned
+  - short, long
+  - signed, unsigned
 - Secondary => Arrays, Strings, Pointers, Structure, enumerator.
 
   |     Data Types     |           Range            | Bytes | Format |
@@ -126,43 +126,48 @@
 - Do not change throughout of the program. for e.g, const int a = 5;
 - Types of constant: char, string, integer, real-valued
 
-| Data Types  |                    Example                     |
-| :---------: | :--------------------------------------------: |
-|     int     |                  int a = 10;                   |
-|    char     |                char name = 'a'                 |
-|   string    |           char name[10] = "avinash"            |
-| real-valued | float: 1.2F or 1.2f, 1.2e5, long: 1.2L or 1.2l |
+  | Data Types  |                    Example                     |
+  | :---------: | :--------------------------------------------: |
+  |     int     |                  int a = 10;                   |
+  |    char     |                char name = 'a'                 |
+  |   string    |           char name[10] = "avinash"            |
+  | real-valued | float: 1.2F or 1.2f, 1.2e5, long: 1.2L or 1.2l |
 
 - Decimal System: 0,1,2,3,4,5,6,7,8,9 => Base 10
 
-|  1   |  2   |  3   |
-| :--: | :--: | :--: |
-|  x   |  x   |  x   |
-| 10^2 | 10^1 | 10^0 |
-| 100  | +20  |  +3  | = 123(Decimal) |
+  |  1   |  2   |  3   |
+  | :--: | :--: | :--: |
+  |  x   |  x   |  x   |
+  | 10^2 | 10^1 | 10^0 |
+  | 100  | +20  |  +3  |
+
+  => 123(Decimal)
 
 - Octal System: 0,1,2,3,4,5,6,7,8 => Base 8 => int a = 012;
 
-|  0  |  1  |  2  |
-| :-: | :-: | :-: |
-|  -  |  x  |  x  |
-|  -  | 8^1 | 8^0 |
-|  -  |  8  | +2  | = 10(Decimal) |
+  |  0  |  1  |  2  |
+  | :-: | :-: | :-: |
+  |  -  |  x  |  x  |
+  |  -  | 8^1 | 8^0 |
+  |  -  |  8  | +2  |
+
+  => 10(Decimal)
 
 - Hexa-Decimal System: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f => Base 16 => int a = 0x12;
 
-|  0  |  x  |  1   |  2   |
-| :-: | :-: | :--: | :--: |
-|  -  |  -  |  x   |  x   |
-|  -  |  -  | 16^1 | 16^0 |
-|  -  |  -  |  16  |  +2  | = 18(Decimal) |
+  |  0  |  x  |  1   |  2   |
+  | :-: | :-: | :--: | :--: |
+  |  -  |  -  |  x   |  x   |
+  |  -  |  -  | 16^1 | 16^0 |
+  |  -  |  -  |  16  |  +2  |
+
+  => 18(Decimal)
 
 - Symbolic Constant: #define PI 3.14 => Macro
 
-# C Book:
-
+<!-- # C Book:
 - C in Depth: By Srivastsava
-- K & R -> C
+- K & R -> C -->
 
 # Input Output:
 
@@ -188,13 +193,13 @@
 
 - Integers: printf("a = %4d, b = %3d", a, b); //Formatted Output
 
-```
+  ```
     a: print atmost(Minimum no. of digit) 4 digits
     b: print atmost(Minimum no. of digit) 3 digits
 
     Case 1: a = 12, b = 14 => a = _ _ _ _, b = _ _ _ _ => a = __12, b = _14
     Case 2: a = 12345, b = 123456 => a = 12345, b = 123456
-```
+  ```
 
 - float: scanf("%3f %4f", &a, &b); //Formatted Input
 
@@ -209,13 +214,13 @@
 
 - float: printf("a = %4.1f, b = %7.2f", a, b); //Formatted Output
 
-```
-    a: print atmost(Minimum no. of digit) 4 digits
-    b: print atmost(Minimum no. of digit) 7 digits
+  ```
+  a: print atmost(Minimum no. of digit) 4 digits
+  b: print atmost(Minimum no. of digit) 7 digits
 
-    Case 1: a = 8.0, b = 5.9 => a = _ _ _ _, b = _ _ _ _ _ _ _=> a = _8.0, b = ___5.90
-    Case 2: a = 15.231, b = 65.12345 => a = 15.2, b = __65.12
-```
+  Case 1: a = 8.0, b = 5.9 => a = _ _ _ _, b = _ _ _ _ _ _ _=> a = _8.0, b = ___5.90
+  Case 2: a = 15.231, b = 65.12345 => a = 15.2, b = __65.12
+  ```
 
 - Strings: char str[10] = "abcdef";
 
@@ -240,20 +245,20 @@
 
 - getchar() & putchar()
 
-```
-char c;
-printf("Enter a char: ");
-c = getchar(); //scanf("%c", &c);
+  ```
+  char c;
+  printf("Enter a char: ");
+  c = getchar(); //scanf("%c", &c);
 
-putchar(c); //printf("Value you entered : %c", c);
-```
+  putchar(c); //printf("Value you entered : %c", c);
+  ```
 
 # Operation & Expressions:
 
 - Unary Operator: Operating on one data_type
 - Binary Operator: Operating on two data_type(same or other)
 
-  - NOTE: int divided by int result is also int
+  - <strong>NOTE:</strong> int divided by int result is also int
   - There is no any modulo operation in floating point number, No sense to get remainder in floating point number.
 
 - Assigment Operator: for e.g, int x = 5;
@@ -278,4 +283,35 @@ putchar(c); //printf("Value you entered : %c", c);
   }
   ```
 
-- Relational Operators
+- Relational Operators: In C, Every non-zero value is considered as 1(true) & Zero as 0(false).
+- Logical Operators:
+
+  - Expressions that use logical operators return 0 for false & 1 for true:
+
+    | Operator | Meaning |
+    | :------: | :-----: |
+    |    &&    |   AND   |
+    |   \|\|   |   OR    |
+    |    !     |   NOT   |
+
+  - The truth table for logical operators is shown below:
+
+    |  A  |  B  | A&&B | A \|\| B | !A  |
+    | :-: | :-: | :--: | :------: | :-: |
+    |  0  |  0  |  0   |    0     |  1  |
+    |  0  |  1  |  0   |    1     |  1  |
+    |  1  |  1  |  1   |    1     |  0  |
+    |  1  |  0  |  0   |    1     |  0  |
+
+- Comma Operator
+
+      ```
+      #include <stdio.h>
+      int main(void)
+      {
+      int a, b, c, sum;
+      sum = (a = 8, b = 7, c = 9, a + b + c);
+      printf("Sum = %d\n", sum);
+      return 0;
+      }
+      ```
