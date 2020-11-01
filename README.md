@@ -12,9 +12,9 @@
 - Device Drivers => C/C++
 - Hardware/IoT Programming => C/C++ (Controlling Hardware)
 
-<!-- CPU Work-fLow -->
+  ![image](https://drive.google.com/uc?export=view&id=1VHtiutu8pSm5HRb3Ms2GQ4ouARWiH82A)
 
-![image](https://drive.google.com/uc?export=view&id=1d8xK2HFH99DNw31xhIW5vZyvfv0MGxFh)
+  ![image](https://drive.google.com/uc?export=view&id=1d8xK2HFH99DNw31xhIW5vZyvfv0MGxFh)
 
 # Basic Input & Output:
 
@@ -59,7 +59,9 @@
 - There are two type of Character Set used generally:
 
   - ASCII (Older) => 0 to 255 [256 Numbers]
-  <!-- ASCII Character Set Image -->
+
+    ![image](https://drive.google.com/uc?export=view&id=1yCA0Ih-6LpBevGGMzirhcJyv6zcEq1ed)
+
   - Unicode (Modern) => 1,114,112 Unique Characters
 
 - C follows ASCII Character Set Standard Only.
@@ -72,7 +74,17 @@
 # Keywords & Identifiers:
 
 - 32 Keywords are predefined words in C that we cannot use, they have special meaning.
-<!-- Image 32 Keywords-->
+
+  |   auto   | double |   int    |  struct  |
+  | :------: | :----: | :------: | :------: |
+  |  break   |  else  |   long   |  switch  |
+  |   case   |  enum  | register | typedef  |
+  |   char   | extern |  return  |  union   |
+  | continue |  for   |  signed  |   void   |
+  |    do    |   if   |  static  |  while   |
+  | default  |  goto  |  sizeof  | volatile |
+  |  const   | float  |  short   | unsigned |
+
 - Identifiers are the word that we use to make variable name function name and many other things.
 - In General, Identifier is valid word in C.
 
@@ -174,7 +186,9 @@
 - #include <stdio.h> => Including Header file where some of the key information of printf and scanf how they work is stored in stdio.h header file.
 
 - Escape Sequence:
-<!-- Image -->
+
+  ![image](https://drive.google.com/uc?export=view&id=10vQJ_9uZc1C9OAzaa7zHHfEoACZIh1AL)
+
 - scanf can take input multiple variables value in single line of code.
 
 # Input Output Formatting:
