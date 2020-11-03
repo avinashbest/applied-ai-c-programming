@@ -371,3 +371,44 @@
 |       ? :       |         Conditional         | Right-to-Left | Highest 2  |
 | =, +=, \*=, etc |     Assignment Operator     | Right-to-Left | Highest 1  |
 |        ,        |            Comma            | Left-to-Right |  Lowest 0  |
+
+# Type Casting:
+
+- It is an Unary Operator.
+- Order of Type Casting based on number of bytes required for a data-type is below:
+
+  ```
+  Automatic Type Conversion Order:
+
+  Promotion/Demotion: long double, double, float, long int, int, char
+
+  for e.g, long int l = 2L + 3 = 5L
+  ```
+
+- "Reliable & Readablity of Code": Strongly Recommended Explicitly Type Casting
+
+  ```
+  int x = 20, y = 3;
+  float z = x/y; // z = 6.0 => Implicit/Automatic Conversion
+
+  float z = (float)x/y; // z = 20.0/3 => 6.666666
+  ```
+
+# Bitwise Operators:
+
+- Operations on Bitwise Operators:
+
+  - Bitwise AND
+  - Bitwise OR
+  - Bitwise XOR
+  - Bitwise Left-shift (<<)
+  - Bitwise Right-shift (>>)
+
+- Truth Table:
+
+  |  A  |  B  | A&B | A \| B | A^B |
+  | :-: | :-: | :-: | :----: | :-: |
+  |  0  |  0  |  0  |   0    |  0  |
+  |  0  |  1  |  0  |   1    |  1  |
+  |  1  |  0  |  0  |   1    |  1  |
+  |  1  |  1  |  1  |   1    |  0  |
