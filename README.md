@@ -414,3 +414,6 @@
   |  1  |  1  |  1  |   1    |  0  |
 
 # Control Statements:
+
+- Control statements are used to change the order of execution.
+- for e.g, if-else, if-else-if, for loop, while loop, do-while loop, etc.
