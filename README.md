@@ -416,4 +416,110 @@
 # Control Statements:
 
 - Control statements are used to change the order of execution.
-- for e.g, if-else, if-else-if, for loop, while loop, do-while loop, etc.
+
+- if-else/if-else-if/else-if-ladder: Choose between one & another and more.
+
+  ```
+  if(<condition>){
+    ---;
+    ---;
+  }
+  else if(<condition>){
+    ---;
+    ---;
+  }
+  else{
+    ---;
+    ---;
+  }
+  //We can have "if" without "else" also.
+  ```
+
+- while loop:
+
+  ```
+  while(<condition>){
+    ---;
+    ---;
+  };
+  ```
+
+- do-while loop: Body will run atleast 1 time.
+
+  ```
+  do{
+    ---;
+    ---;
+  }while(<condition>);
+  ```
+
+- for loop: To run a loop n number of times (n is known).
+
+  ```
+  for(initialization; condition; updation)
+  {
+    ---;
+    ---;
+  }
+  ```
+
+- Nested loop:
+
+  ```
+    if(){
+      if(){
+      }
+      else{
+      }
+    }
+
+    for(i = 1; i <= 5; i++) //Outer Loop
+    {
+      for(j = 1; j <= 3; j++) //Inner Loop
+      {
+      printf("%d %d", i, j);
+      }
+    }
+  ```
+
+- Infinite loop: Continuously run without termination.
+
+  ```
+  for(;;)
+  {
+    printf("Hi");
+  }
+
+  while(1)
+  {
+    printf("Hi");
+  }
+
+  int i = 1;
+  while(i <= 5);
+  {
+    printf("Hi");
+  }
+  ```
+
+  - Don't use != & == in float during while loop
+
+# break & continue:
+
+- break & continue only breaks & continues out the inner loop it is the part of.
+
+# goto statement:
+
+- Forward Jump/goto & Backward Jump/goto
+- goto label;
+- label: //identifier
+- goto can jump only within a function
+- try to avoid the use of goto in program
+- In very deep nested loop , goto is really good application here.
+- goto need 1 statement after label_identifier
+
+# Switch Case:
+
+- Expression of switch is evaluated to only int/char/short/long
+- case value must be integer/character constant
+- switch expression does not allow for floating point number.
